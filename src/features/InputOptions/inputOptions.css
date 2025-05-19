@@ -1,0 +1,60 @@
+.single_select {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+
+.single_select img {
+    position: absolute;
+    right: 5px;
+    /* top: 0px; */
+    height: 100%;
+    width: 18px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.single_select input {
+    border: none !important;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+input:disabled {
+    background-color: #d2cece !important;
+    cursor: not-allowed ;
+}
+
+.single_select input:focus {
+    border: none !important;
+    border-right: 1px solid #86bc25 !important;
+    border-left: 1px solid #86bc25 !important;
+    border-bottom: 1px solid #86bc25 !important;
+    outline: none;
+}
+
+
+.options {
+    position: absolute;
+    height: fit-content;
+    border: 1px solid #c0bdbd;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 9999;
+    height: fit-content;
+    text-align: left;
+    padding-left: 8px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.options h5 {
+    font-size: 16px;
+    padding: 3px 8px;
+    margin: 3px 0 !important;
+}
+
+.options h5.selected {
+    background: lightblue;
+}

@@ -1,0 +1,50 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid grey;
+  margin-bottom: 100px;
+}
+
+.table_main {
+  overflow-x: auto !important;
+  height: 60vh;
+}
+
+thead {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+thead th {
+  background: #2c599d !important;
+  border: 1px solid #40e2e6;
+  font-weight: normal;
+  text-align: center;
+  color: white !important;
+}
+
+.table tbody td {
+  padding: 0 !important;
+  height: 50px;
+  border-right: 1px solid #86bc25;
+  border-left: 1px solid #86bc25;
+  border-bottom: 1px solid #86bc25;
+  text-align: center;
+  position: relative;
+}
+
+tr {
+  margin-bottom: 1px !important;
+}
+
+select {
+  /* margin-top:20px; */
+  border: none;
+  font-size: 0.9rem;
+  width: 75%;
+  height: 40px;
+  padding: 2px 5px;
+  color: black;
+  background-color: rgb(159, 159, 159);
+}

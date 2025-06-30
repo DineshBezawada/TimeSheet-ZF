@@ -1,12 +1,14 @@
-import LocationSelector from './features/CountriesDropdown/CountriesDropdown';
+import CountryDropdown from './features/CountriesDropdown/CountriesDropdown';
 import ExcelDataReader from './features/ExcelDataReader';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import InfiniteScroll from './features/InfiniteScroll/InfiniteScroll';
 
 function App() {
   return (
-    <div className="App">
-      <ExcelDataReader/>
-      <LocationSelector/>
+    <div>
+      {/* <ExcelDataReader/>
+      <CountryDropdown/> */}
+      <InfiniteScroll/>
     </div>
   );
 }

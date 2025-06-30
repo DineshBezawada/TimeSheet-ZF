@@ -1,0 +1,30 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.posts-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.post-item h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #333;
+}
+
+.post-item p {
+  color: #666;
+  line-height: 1.6;
+}

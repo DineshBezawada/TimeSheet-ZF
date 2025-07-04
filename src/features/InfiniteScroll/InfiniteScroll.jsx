@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import Loader from "../Loader/Loader";
 
 const InfiniteScroll = () => {
   const [posts, setPosts] = useState([]);
@@ -25,6 +26,7 @@ const InfiniteScroll = () => {
 
   const fetchPosts = async (pageNum) => {
     setLoading(true);
+    await new Promise(resolve => setTimeout(resolve, 1000));
     const res = await fetch(
       `https://jsonplaceholder.typicode.com/posts?_page=${pageNum}&_limit=10`
     );
@@ -53,7 +55,7 @@ const InfiniteScroll = () => {
         {posts.map((post, index) => {
           if (index === posts.length - 1 && hasMore) {
             return (
-              <div ref={lastPostElementRef} key={post.id} className="post-item">
+              <div ref={lastPostElementRef} key={index} className="post-item">
                 <h2>
                   {post.id}. {post.title}
                 </h2>
@@ -62,7 +64,7 @@ const InfiniteScroll = () => {
             );
           } else {
             return (
-              <div key={post.id} className="post-item">
+              <div key={index} className="post-item">
                 <h2>
                   {post.id}. {post.title}
                 </h2>
@@ -72,7 +74,7 @@ const InfiniteScroll = () => {
           }
         })}
 
-        {loading && <p>Loading more posts...</p>}
+        {loading && <Loader/>}
 
         {!hasMore && !loading && posts.length > 0 && (
           <p>You have reached the end of the posts.</p>

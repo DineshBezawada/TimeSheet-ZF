@@ -81,7 +81,7 @@ const InfiniteScroll = () => {
         )}
 
         {!loading && posts.length === 0 && !hasMore && (
-          <p>No posts available at the moment.</p>
+          <h3>No posts available at the moment.</h3>
         )}
       </div>
     </div>

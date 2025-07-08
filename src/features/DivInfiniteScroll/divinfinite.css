@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 150px;
+}
+
+button {
+  width: 150px;
+}
+
+.sliding-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 12px;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid #aeaeae;
+  transition: height 0.5s ease-in-out;
+  z-index: 10;
+  height: 0;
+}
+
+.sliding-wrapper.open {
+  height: auto; 
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}

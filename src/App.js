@@ -3,6 +3,7 @@ import ExcelDataReader from './features/ExcelDataReader';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InfiniteScroll from './features/InfiniteScroll/InfiniteScroll';
 import DivInfinite from './features/DivInfiniteScroll/DivInfiniteScroll';
+import Test from './features/test';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <ExcelDataReader/>
       <CountryDropdown/> */}
       {/* <InfiniteScroll/> */}
-      <DivInfinite />
+      {/* <DivInfinite /> */}
+      <Test />
     </div>
   );
 }
